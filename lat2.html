@@ -6,10 +6,18 @@
 </head>
 <body>
     <div id= "app" >
-      <p>{{ greet(" bias damiasa") }}</p>
+      <p>{{ greet(" Arrofi ") }}</p>
     </div>
-    <script src ="app.js">
-      
+    <script>
+      var app = new Vue ({
+    el :"#app",
+    methods :{
+        greet: function(name){
+            return 'Good morning'+ name;
+        }
+    }
+})
+
     </script>
 </body>
 </html>
