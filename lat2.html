@@ -5,18 +5,28 @@
     <title> Hello world</title>
 </head>
 <body>
-    <div id= "app" >
+  <div id= "app" >
+    <p>{{ greet(" Arrofi") }}</p>
+  </div>
+    <div id= "app2" >
       <!-- <p>{{ greet(" Arrofi ") }}</p> -->
-      <img v-bind:src="url">
+      <a v-bind:href="url">Smk telkom Malang</a>
     </div>
     <script>
-      var app = new Vue ({
+        var app = new Vue ({
     el :"#app",
+    methods :{
+        greet: function(name){
+            return 'Good morning'+ name;
+        }
+    }
+})
+      var app = new Vue ({
+    el :"#app2",
     data:{
-      "url": "https://www.fullstackpython.com/img/logos/vuejs-wide.png"
+      "url": "https://smktelkom-mlg.sch.id/"
     }  
     })
-
     </script>
 </body>
 </html>
