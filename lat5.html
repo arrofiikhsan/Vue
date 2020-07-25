@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title> Hello world</title>
+</head>
+<body>
+    <div id= "app" >
+   <li v-for="k in kelas">
+    {{k}}
+   </li>
+    </div>
+    <script>
+        var app =new Vue({
+            el: "#app",
+            data: {
+                "kelas" :["XRPL1","XRPL2","XIRPL1","XIRPL2","XIIRPL1","XIIRPL2"]
+            }
+        })
+   </script>
+</body>
+</html>
